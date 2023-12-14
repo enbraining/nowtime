@@ -1,4 +1,4 @@
-// MTE4NDcyOTMwMjA4MDcwMDQzNg.GByRhf.SrkPtHutKuAUvsg2x6nrJ2aBjA2r0Fv43dqacc
+require("dotenv").config();
 
 const { Client, GatewayIntentBits } = require('discord.js');
 const cron = require('cron');
@@ -29,4 +29,4 @@ client.on('ready', () => {
   job.start();  // cron 작업 시작
 });
 
-client.login('MTE4NDcyOTMwMjA4MDcwMDQzNg.GByRhf.SrkPtHutKuAUvsg2x6nrJ2aBjA2r0Fv43dqacc');
+client.login(process.env.TOKEN);
